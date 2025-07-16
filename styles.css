@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.terminal {
+  text-align: center;
+  max-width: 90%;
+}
+
+.typing {
+  font-size: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00ff00;
+  animation: typing 2.5s steps(40, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.highlight {
+  color: #0ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  border: 6px solid #222;
+  border-top: 6px solid #0f0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+#timer {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.book-image {
+  margin-top: 20px;
+  max-width: 95%;
+  border: 3px solid #0f0;
+  border-radius: 5px;
+}
