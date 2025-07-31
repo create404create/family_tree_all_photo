@@ -9,7 +9,7 @@ function startTimer(duration) {
     const hrs = String(Math.floor(time / 3600)).padStart(2, '0');
     const mins = String(Math.floor((time % 3600) / 60)).padStart(2, '0');
     const secs = String(time % 60).padStart(2, '0');
-    timerEl.textContent = `${hrs}:${mins}:${secs}`;
+    timerEl.textContent = `${mins}:${secs}`;
 
     if (time <= 0) {
       clearInterval(interval);
