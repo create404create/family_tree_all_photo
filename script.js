@@ -25,5 +25,5 @@ function startTimer(duration) {
 setTimeout(() => {
   message.classList.add("hidden");
   loading.classList.remove("hidden");
-  startTimer(3600); // 1 hour = 3600 seconds
+  startTimer(3600); // 2 minutes = 120 seconds
 }, 3000);
